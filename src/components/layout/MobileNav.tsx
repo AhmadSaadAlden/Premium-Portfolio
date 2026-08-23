@@ -12,7 +12,8 @@ export const MobileNav = () => {
     const [open, setOpen] = useState(false)
     const language = useAppSelector((state) => state.language.language)
     const isAr = language === 'ar'
-    const t = translations[language].nav
+    const navT = translations[language].nav
+    const mobileT = translations[language].mobileNav
 
     return (
         <Sheet open={open} onOpenChange={setOpen}>
@@ -45,7 +46,7 @@ export const MobileNav = () => {
                     {/* Navigation Links */}
                     <nav className='flex flex-col gap-2.5'>
                         {NAV_ITEMS.map((item) => {
-                            const label = t[item.key as keyof Omit<typeof t, 'mobileNav'>] as string
+                            const label = navT[item.key as keyof typeof navT]
                             return (
                                 <a
                                     key={item.id}
@@ -79,7 +80,7 @@ export const MobileNav = () => {
                 {/* Footer Controls Container */}
                 <div className='pt-5 border-t border-border/50 flex items-center justify-between bg-muted/30 p-3.5 rounded-2xl border border-border/30'>
                     <span className='text-xs text-muted-foreground font-semibold px-1'>
-                        {t.mobileNav.settings}
+                        {mobileT.settings}
                     </span>
                     <div className='flex items-center gap-2'>
                         <LanguageSwitcher />

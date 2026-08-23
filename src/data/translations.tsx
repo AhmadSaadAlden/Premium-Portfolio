@@ -7,10 +7,10 @@ export interface TranslationDictionary {
         skills : string
         contact : string
         chat : string
-        mobileNav : {
-            settings : string
-        }
     },
+    mobileNav : {
+        settings : string
+    }
     hero : {
         titlePrefix: string
         badge: string
@@ -131,9 +131,9 @@ export const translations : Record<Language, TranslationDictionary> = {
             skills : 'Skills',
             contact : 'Contact',
             chat : 'Let\'s Talk',
-            mobileNav : {
-                settings : 'Settings'
-            }
+        },
+        mobileNav : {
+            settings : 'Settings'
         },
 
         hero: {
@@ -264,9 +264,9 @@ export const translations : Record<Language, TranslationDictionary> = {
             skills : 'المهارات',
             contact : 'تواصل معي',
             chat : 'تواصل معي',
-            mobileNav : {
-                settings : 'الاعدادات'
-            }
+        },
+        mobileNav : {
+            settings : 'الاعدادات'
         },
 
         hero: {
