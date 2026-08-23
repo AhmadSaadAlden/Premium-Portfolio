@@ -14,8 +14,8 @@ export default function Hero() {
   const language = useAppSelector((state) => state.language.language)
   const t = translations[language].hero
   const isRtl = language === 'ar'
-  const cvHref = 'https://drive.google.com/uc?export=download&id=1G28666EPADkrtOtWj2amykXTec9Byi9K'
-    //https://drive.google.com/file/d/1G28666EPADkrtOtWj2amykXTec9Byi9K/view?usp=sharing
+  const cvHref = 'https://drive.google.com/uc?export=download&id=1E_mdmlMpPwW6ouSu6S1veyNZNdGse1YO'
+    //https://drive.google.com/file/d/1E_mdmlMpPwW6ouSu6S1veyNZNdGse1YO/view?usp=sharing
     return (
         <section
         className={cn(
