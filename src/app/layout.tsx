@@ -14,7 +14,12 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://your-portfolio.verc
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  
+
+  // اثبات الملكية في google
+  verification : {
+    google : "l8pYOvpD4zECnCGXX3P2OE-PkdxJ-TLUxQIdXkPBlfY"
+  },
+
   // عنوان الموقع في تبويب المتصفح ومحركات البحث
   title: 'Ahmad Saad Alden | Front-End Engineer & Instructor',
   
